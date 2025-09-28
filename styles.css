@@ -1,0 +1,199 @@
+body {
+  background: #111;
+  color: #ffd700;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #222;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5em;
+}
+
+nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #fff6cc;
+}
+
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #181818;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0008;
+}
+
+section {
+  display: none;
+}
+
+section.show {
+  display: block;
+}
+
+h2 {
+  border-left: 4px solid #ffd700;
+  padding-left: 0.5em;
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 1.5em;
+}
+
+input, textarea, select, button {
+  background: #222;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  border-radius: 6px;
+  padding: 0.6em;
+  margin-right: 0.5em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #ffd700;
+}
+
+button {
+  background: #ffd700;
+  color: #111;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #fff6cc;
+  color: #111;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #222;
+  color: #ffd700;
+  margin-top: 3em;
+  border-top: 1px solid #444;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.gallery-list img, .gallery-list video {
+  max-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px #000a;
+  background: #222;
+}
+
+.diary-list {
+  margin-top: 1em;
+}
+
+.diary-entry {
+  background: #222;
+  color: #ffd700;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-shadow: 0 1px 8px #000a;
+}
+
+.diary-entry h3 {
+  margin: 0 0 0.5em 0;
+}
+
+.diary-date {
+  font-size: 0.85em;
+  color: #fff6cc;
+}
+
+.bucket-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bucket-list li {
+  background: #222;
+  color: #ffd700;
+  margin-bottom: 0.5em;
+  padding: 0.6em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+
+.bucket-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.bucket-list li:hover {
+  background: #ffd700;
+  color: #111;
+}
+
+.bucket-list button {
+  background: transparent;
+  color: #ffd700;
+  border: none;
+  cursor: pointer;
+  margin-left: 1em;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 1em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 0.5em;
+  }
+}

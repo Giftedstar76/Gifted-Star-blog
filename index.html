@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Black & Gold Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h1>My Black & Gold Blog</h1>
+    <ul>
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('gallery')">Gallery</a></li>
+      <li><a href="#" onclick="showSection('diary')">Diary</a></li>
+      <li><a href="#" onclick="showSection('bucket')">Bucket List</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="show">
+      <h2>Welcome!</h2>
+      <p>This is your personal space to share memories, write your diary, and dream with your bucket list.</p>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <form id="gallery-form">
+        <input type="url" id="media-url" placeholder="Image or video URL" required>
+        <select id="media-type">
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+        <button type="submit">Add to Gallery</button>
+      </form>
+      <div id="gallery-list" class="gallery-list"></div>
+    </section>
+    <section id="diary">
+      <h2>Diary</h2>
+      <form id="diary-form">
+        <input type="text" id="diary-title" placeholder="Title" required>
+        <textarea id="diary-entry" placeholder="What's on your mind?" required></textarea>
+        <button type="submit">Add Entry</button>
+      </form>
+      <div id="diary-list" class="diary-list"></div>
+    </section>
+    <section id="bucket">
+      <h2>Bucket List</h2>
+      <form id="bucket-form">
+        <input type="text" id="bucket-item" placeholder="Something you want to do..." required>
+        <button type="submit">Add</button>
+      </form>
+      <ul id="bucket-list" class="bucket-list"></ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 My Black & Gold Blog
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
